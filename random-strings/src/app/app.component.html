@@ -3,7 +3,7 @@
 </div>
 
 <div class="template-wrapper">
-  <ng-template ngIf="!textString.match('0')">
+  <ng-template *ngIf="!textString.match('0')">
     <p
       [ngClass]="{
         numbers: textString.match('^[1-9]+$'),
